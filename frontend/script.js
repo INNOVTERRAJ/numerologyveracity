@@ -5,7 +5,7 @@ document.getElementById("numerologyForm").addEventListener("submit", async (e) =
     const birthdate = document.getElementById("birthdate").value;
 
     try {
-        const response = await fetch("http://localhost:5000/api/numerology", {
+        const response = await fetch("https://numerologyveracity.onrender.com/api/numerology", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, birthdate }),
